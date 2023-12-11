@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 210px;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ba00a1;
+  overflow: hidden;
+  width: 50%;
+  height: 0;
+  transition: .7s ease;
+}
+
+.container:hover .overlay {
+  height: 25px;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body>
+
+<h2>ENTERnaNEt</h2>
+
+<div class="container">
+  <a href="https://www.facebook.com/">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" alt="Avatar" class="image">  </a>
+  <div class="overlay">
+    <div class="text">facebook</div>
+  </div>
+</div>
+
+
+<div class="container">
+    <a href="https://www.youtube.com/">
+    <img src="https://media3.giphy.com/media/13Nc3xlO1kGg3S/giphy.gif?cid=6c09b952rj6zwpvsxa8xd6twd5umgzp8d5cae01vmsv3i2xz&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Avatar" class="image">  </a>
+    <div class="overlay">
+      <div class="text">YouTube</div>
+    </div>
+
+</body>
+</html>
+
